@@ -42,7 +42,7 @@
 
 		a {
 			background-color: $nav-background-color;
-			border: 1px solid $nav-border-color;
+			border: 0px solid $nav-border-color;
 			border-top: 0;
 			color: $nav-link-color;
 			font-size: $subnav-font-size;
@@ -60,6 +60,7 @@
 	.menu-item-hover,
 	.menu-item:focus {
 		position: static;
+		background-image: url(#{$image-path}#{$nav-button-background-hover});
 	}
 
 	.menu-item:hover > .sub-menu,
@@ -109,6 +110,7 @@
 		@include span-columns(12);
 		float: left;
 		text-align: center;
+		margin-top: 20px;
 	}
 
 	li > a {
