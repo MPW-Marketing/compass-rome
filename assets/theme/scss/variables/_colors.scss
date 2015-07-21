@@ -8,6 +8,7 @@
 //------------------------------------------------------------------------------
 $off-black:   #1c1e1f;
 $rome-off-black: #2A2A2A;
+$rome-fog:	  #F2F2F0;
 $dark-gray:   #494b4c;
 $medium-gray: #676869;
 $light-gray:  #a4a5a5;
@@ -23,9 +24,9 @@ $rome-dark-gray: #303030;
 
 // Global Base Colors
 //------------------------------------------------------------------------------
-$base-background-color:           $white;
+$base-background-color:           $rome-fog;
 $base-font-color:                 $off-black;
-$base-border-color:               $medium-fog;
+$base-border-color:               $rome-fog;
 $base-accent-color:               $rome-red;
 $base-heading-color:              $off-black;
 $base-heading-color-hover:        $off-black;
@@ -59,14 +60,14 @@ $form-placeholder-color:  darken($base-border-color, 10);
 
 // Header Colors
 //------------------------------------------------------------------------------
-$header-background-color: $light-fog;
+$header-background-color: $white;
 $header-border-color:     $base-border-color;
 $header-font-color:       $white;
 $header-link-color:       $light-fog;
 
 // Navigation Colors
 //------------------------------------------------------------------------------
-$nav-background-color:            transparent;
+$nav-background-color:            $white;
 $nav-border-color:                $base-border-color;
 $nav-link-color:                  $white;
 $nav-link-color-hover:            $white;
