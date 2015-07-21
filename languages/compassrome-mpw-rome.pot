@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Compassrome MPW Rome 2.0.2\n"
 "Report-Msgid-Bugs-To: Robert Neu <translations@flagshipwp.com>\n"
-"POT-Creation-Date: 2015-07-21 16:56:18+00:00\n"
+"POT-Creation-Date: 2015-07-21 19:47:53+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -102,12 +102,6 @@ msgstr ""
 
 #: content/singular/attachment-video.php:42
 msgid "Video Info"
-msgstr ""
-
-#: footer.php:26
-#. Translators: 1 is current year, 2 is site name/link, 3 is WordPress
-#. name/link.
-msgid "Copyright &#169; %1$s %2$s. Powered by %3$s."
 msgstr ""
 
 #: functions.php:32

@@ -114,15 +114,18 @@
 	}
 
 	li > a {
-		padding-top: 15px;
-		padding-bottom: 15px;
+		padding-top: 13px;
+		padding-bottom: 13px;
 	}
 
 	.sub-menu {
-		border-top: 1px solid $menu-header-border-color;
+		border-top: 0px solid $menu-header-border-color;
 
 		.sub-menu {
-			margin-top: -60px;
+			margin-top: -39px;
+		}
+		.menu-item {
+			margin: 0 0;
 		}
 	}
 }

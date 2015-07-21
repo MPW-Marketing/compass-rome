@@ -7,6 +7,7 @@
 // Theme Colors (private vars)
 //------------------------------------------------------------------------------
 $off-black:   #1c1e1f;
+$rome-off-black: #2A2A2A;
 $dark-gray:   #494b4c;
 $medium-gray: #676869;
 $light-gray:  #a4a5a5;
@@ -181,9 +182,9 @@ $widget-link-color-hover: $base-link-color;
 
 // Footer Widgets Colors
 //------------------------------------------------------------------------------
-$footer-widgets-background-color:              $light-fog;
-$footer-widgets-font-color:                    $base-font-color;
-$footer-widgets-heading-color:                 $base-heading-color;
+$footer-widgets-background-color:              $rome-off-black;
+$footer-widgets-font-color:                    $white;
+$footer-widgets-heading-color:                 $white;
 $footer-widgets-link-color:                    $medium-gray;
 $footer-widgets-link-color-hover:              $base-link-color-hover;
 $footer-widgets-border-color:                  $base-border-color;
@@ -194,8 +195,8 @@ $footer-widgets-button-font-color-hover:       $base-button-font-color-hover;
 
 // Footer Colors
 //------------------------------------------------------------------------------
-$footer-background-color: $white;
-$footer-font-color:       $base-font-color;
+$footer-background-color: $rome-off-black;
+$footer-font-color:       $white;
 $footer-border-color:     $base-border-color;
 $footer-link-color:       $medium-gray;
 $footer-link-color-hover: $base-link-color;

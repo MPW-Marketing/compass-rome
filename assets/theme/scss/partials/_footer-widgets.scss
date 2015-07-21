@@ -1,13 +1,14 @@
 .footer-widgets {
 	background-color: $footer-widgets-background-color;
-	border-top: 1px solid $footer-widgets-border-color;
-	border-bottom: 1px solid $footer-widgets-border-color;
+	background-image: url(#{$image-path}#{$footer-background});
+	background-repeat: repeat-x;
 	color: $footer-widgets-font-color;
 	font-size: $footer-widgets-font-size;
-	padding: $base-padding 0 10px;
+	padding: 15px 0 10px;
 
 	.widget-title {
 		color: $footer-widgets-heading-color;
+		margin-bottom: 30px;
 	}
 
 	a {
@@ -71,13 +72,14 @@
 }
 
 @include media($medium-screen-up) {
-	.footer-widgets-3 {
+	.footer-widgets-4 {
 		@include omega();
 	}
 
 	.footer-widgets-1,
 	.footer-widgets-2,
-	.footer-widgets-3 {
-		@include span-columns(4);
+	.footer-widgets-3,
+	.footer-widgets-4 {
+		@include span-columns(3);
 	}
 }
