@@ -24,27 +24,29 @@ $rome-dark-gray: #303030;
 
 // Global Base Colors
 //------------------------------------------------------------------------------
+$site-main-color:				  $rome-red;
+$site-secondary-color:			  $rome-blue;
 $base-background-color:           $rome-fog;
 $base-font-color:                 $off-black;
 $base-border-color:               $rome-fog;
-$base-accent-color:               $rome-red;
+$base-accent-color:               $site-main-color;
 $base-heading-color:              $off-black;
 $base-heading-color-hover:        $off-black;
 $base-blockquote-color:           $medium-gray;
-$base-link-color:                 $rome-red;
-$base-link-color-hover:           lighten($rome-red, 10);
+$base-link-color:                 $site-main-color;
+$base-link-color-hover:           lighten($site-main-color, 10);
 $base-selection-background-color: $off-black;
 $base-selection-color:            $white;
-$base-insert-color:               lighten($rome-red, 45);
+$base-insert-color:               lighten($site-main-color, 45);
 $cta-background-color:            $dark-gray;
 
 // Button Colors
 //------------------------------------------------------------------------------
-$base-button-background-color:       $rome-blue;
+$base-button-background-color:       $site-secondary-color;
 $base-button-background-color-hover: lighten($base-button-background-color, 10);
 $base-button-font-color:             $white;
 $base-button-font-color-hover:       $white;
-$cta-button-background-color:        $rome-red;
+$cta-button-background-color:        $site-main-color;
 $cta-button-background-color-hover:  lighten($cta-button-background-color, 10);
 $cta-button-font-color:              $white;
 $cta-button-font-color-hover:        $white;
@@ -100,7 +102,7 @@ $menu-mobile-subnav-color:           lighten($nav-link-color, 15);
 
 // Entry Colors
 //------------------------------------------------------------------------------
-$entry-background-color:           $white;
+$entry-background-color:           $rome-fog;;
 $entry-border-color:               $base-border-color;
 $entry-sticky-border-color:        $dark-gray;
 $blockquote-border-color:          $light-fog;
@@ -137,9 +139,9 @@ $media-player-unmute-button-color: $dark-gray;
 
 // Comment Section Colors
 //------------------------------------------------------------------------------
-$comments-background-color:                 $white;
+$comments-background-color:                 $rome-fog;
 $comments-font-color:                       $base-font-color;
-$comment-background-color:                  $white;
+$comment-background-color:                  $rome-fog;
 $comment-border-color:                      $base-border-color;
 $comment-header-background-color:           $light-fog;
 $comment-author-header-background-color:    lighten($seafoam, 50);
@@ -155,7 +157,7 @@ $allowed-tags-background-color:             $light-fog;
 
 // Pagination Colors
 //------------------------------------------------------------------------------
-$pagination-background-color:         $white;
+$pagination-background-color:         $rome-fog;
 $pagination-background-color-hover:   $light-fog;
 $pagination-current-background-color: darken($light-fog, 4);
 $pagination-link-color:               $base-font-color;
@@ -177,7 +179,7 @@ $page-links-border-color-hover:       $pagination-border-color-hover;
 
 // Base Widget Colors
 //------------------------------------------------------------------------------
-$widget-background-color: $white;
+$widget-background-color: $rome-fog;
 $widget-link-color:       $medium-gray;
 $widget-link-color-hover: $base-link-color;
 
@@ -193,6 +195,7 @@ $footer-widgets-button-background-color:       $base-button-background-color;
 $footer-widgets-button-font-color:             $base-button-font-color;
 $footer-widgets-button-background-color-hover: $base-button-background-color-hover;
 $footer-widgets-button-font-color-hover:       $base-button-font-color-hover;
+$footer-widgets-top-bar-background-color:	   $site-main-color;
 
 // Footer Colors
 //------------------------------------------------------------------------------

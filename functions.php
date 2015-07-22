@@ -109,5 +109,13 @@ function compassrome_includes() {
 }
 
 
+function insert_layer_slider () {
+	if (is_front_page()){
+		return layerslider(1);
+	}
+}
+
+add_action( 'tha_entry_before', 'insert_layer_slider', 10 );
+
 // Add a hook for child themes to execute code.
 do_action( 'flagship_after_setup_parent' );
