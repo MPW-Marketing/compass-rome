@@ -1,7 +1,7 @@
 .footer-widgets {
 	/*background-color: $footer-widgets-background-color;
 	background-image: url(#{$image-path}#{$footer-background});*/
-	background: linear-gradient( to bottom, #{$site-main-color} 60px, #{$site-main-color}, #{$footer-widgets-background-color}, #{$footer-widgets-background-color} 50%);
+	background: linear-gradient( to bottom, #{$site-main-color}, #{$site-main-color} 60px, #{$footer-widgets-background-color} 60px, #{$footer-widgets-background-color});
 	background-repeat: repeat-x;
 	color: $footer-widgets-font-color;
 	font-size: $footer-widgets-font-size;
