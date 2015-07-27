@@ -1,5 +1,5 @@
 $border-color: 				#00aeef;
-$box-background-top-color: 	#002d62;
+$box-background-top-color: 	$rome-blue;
 $box-background-bottom-color: 	#011022;
 $stripe-color:				#fff;
 $box-hover-top-color:		lighten($box-background-top-color, 20);
@@ -32,6 +32,14 @@ $box-bg-top-actual:			#094C80;
     	}	
     	.link-info {
     		font-size: $small-font-size;
+    	}
+    	.link-title {
+		display: block;
+    	line-height: 0.7rem;
+    		a {
+    		text-transform: uppercase;
+    		font-weight: bold;
+    		}
     	}
   	}
   	.quick-link.last {

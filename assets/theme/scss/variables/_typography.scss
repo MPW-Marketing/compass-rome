@@ -3,11 +3,17 @@
 // font styles of our theme and prevents arbitrary font style assignment.
 // Do not use the base theme font styles in the scss partial files! Set up your
 // theme's base font styles and then use scoped font values in your Sass partials.
+//Include Google Fonts
+
+@import url(http://fonts.googleapis.com/css?family=Questrial|Open+Sans:400,300,700|Open+Sans+Condensed:300);
 
 // Global Font Families
 //------------------------------------------------------------------------------
-$sans-serif:      Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$sans-serif-alt:  Raleway, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$open-sans:		'Open Sans', sans-serif;
+$questrial:		'Questrial', sans-serif;
+$open-sans-condensed:	'Open Sans Condensed', 'Open Sans', sans-serif;
+$sans-serif:      'Open Sans', Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$sans-serif-alt:  'Questrial', Raleway, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $serif:           Georgia, Times, 'Times New Roman', serif;
 $monospace:       Consolas, Monaco, 'Andale Mono', 'DejaVu Sans Mono', monospace;
 
