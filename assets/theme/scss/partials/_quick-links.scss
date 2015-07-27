@@ -1,0 +1,40 @@
+$border-color: 				#00aeef;
+$box-background-top-color: 	#002d62;
+$box-background-bottom-color: 	#011022;
+$stripe-color:				#fff;
+$box-hover-top-color:		lighten($box-background-top-color, 20);
+$box-hover-bottom-color: 	lighten($box-background-bottom-color, 20);
+$box-bg-top-actual:			#094C80;
+
+.quick-links-outer {
+	background: linear-gradient( to bottom,  $border-color, $border-color 8px, transparent 8px, transparent 202px,  $border-color 202px,  $border-color), repeating-linear-gradient( -45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 2px, rgba(0, 0, 0, 0.1) 2px, rgba(0, 0, 0, 0.1) 7px), linear-gradient( to bottom, $box-background-top-color, $box-background-bottom-color), linear-gradient(to bottom, #00aeef, #00aeef);
+  	margin: 0 -9999rem;
+  	padding: 0 9999rem;
+}
+.quick-links-container {
+  @include outer-container;
+  height: 208px;
+  border-top: 8px solid transparent;
+   border-bottom: 8px solid transparent;
+  color: $base-light-font-color;
+  	.quick-link { 
+  		@include span-columns(4); 
+  		text-align: center;
+  		height: 100%;
+  		padding: 10px;
+  		cursor: pointer;
+  		    &:hover {
+     			 background: repeating-linear-gradient( -45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 2px, rgba(0, 0, 0, 0.1) 2px, rgba(0, 0, 0, 0.1) 7px), linear-gradient( to bottom, $box-hover-top-color, $box-hover-bottom-color );
+    		}
+    	a {
+    		color: $base-light-font-color;
+    		font-size: $medium-font-size;
+    	}	
+    	.link-info {
+    		font-size: $small-font-size;
+    	}
+  	}
+  	.quick-link.last {
+  		@include omega();
+  	}
+}
