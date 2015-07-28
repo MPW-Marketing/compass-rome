@@ -191,4 +191,11 @@ add_action( 'tgmpa_register', 'my_theme_register_required_plugins' );
 // Add a hook for child themes to execute code.
 do_action( 'flagship_after_setup_parent' );
 
-
+  function column_func( $atts, $content="" ) {
+    $divclass = "col";
+    if ($atts['number'] != "") {
+      $divclass = "col-" . $atts['number'];
+    }
+    return "<div class='" . $divclass . "'>" . $content . "</div>";
+  }
+  add_shortcode( 'column', 'column_func' );
