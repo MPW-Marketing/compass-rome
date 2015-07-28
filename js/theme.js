@@ -570,7 +570,7 @@ jQuery(document).ready(function ($) {
     }
   });
   $('.home-events .tab-content').mCustomScrollbar({
-    theme:"dark",
+    theme:"mpw-rome-dark",
     alwaysShowScrollbar: 1
 	});
 });
