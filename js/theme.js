@@ -571,7 +571,6 @@ jQuery(document).ready(function ($) {
   });
   $('.home-events .tab-content').mCustomScrollbar({
     theme:"mpw-rome-dark",
-    alwaysShowScrollbar: 1
 	});
 });
 
