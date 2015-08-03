@@ -49,9 +49,9 @@
 						<?php dynamic_sidebar( 'header-right' ); ?>
 					</div><!-- #top-right-sidebar -->
 				<?php endif; ?>
-				
+			<div class="full-width-section nav-outer-wrap">
 				<?php hybrid_get_menu( 'primary' ); ?>
-
+			</div>
 				<?php tha_header_bottom(); ?>
 
 			</div>

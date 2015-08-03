@@ -181,3 +181,10 @@ img.alignnone,
 	width: auto;
 	z-index: $screen-reader-z-index;
 }
+
+/* Added Classes
+--------------------------------------------- */
+.full-width-section {
+	margin: 0 -9999rem;
+    padding: 0 9999rem;
+}

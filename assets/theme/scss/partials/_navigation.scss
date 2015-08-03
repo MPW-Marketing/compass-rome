@@ -1,3 +1,22 @@
+.nav-outer-wrap {
+	float: left;
+}
+.full-width-section.nav-outer-wrap {
+	margin: 0 -420px;
+    padding: 0 420px;
+}
+#menu-primary {
+    background: #ffffff;
+    margin: 0 5px;
+}
+$fullbg-offset: 20px;
+$fullbg-section-width: 120px;
+$fullbg-width-offest: $fullbg-offset + $fullbg-section-width;
+.full-width-section.nav-outer-wrap {
+    /*background: repeating-linear-gradient(to right, #000, #000 120px, transparent 120px, transparent 140px);*/
+    background: repeating-linear-gradient(to right,#fff, #fff #{$fullbg-offset}, transparent #{$fullbg-offset}, transparent $fullbg-width-offest), url(#{$image-path}#{$nav-button-background});
+    margin-top: 20px;
+    }
 .nav-menu {
 	clear: both;
 	font-size: 0.001px;
@@ -7,15 +26,17 @@
 	.menu-item {
 		display: inline-block;
 		font-size: $nav-font-size;
-		text-align: left;
+		text-align: center;
 		background-image: url(#{$image-path}#{$nav-button-background});
 		margin: 0 5px;
+		min-width: 120px;
 	}
 
 	li > a {
 		color: $nav-link-color;
 		display: block;
 		padding: 15px 15px;
+		text-transform: lowercase;
 
 		@include media($large-screen-up) {
 			padding-left: 20px;
@@ -72,7 +93,7 @@
 	}
 
 	> .menu-item > a {
-		text-transform: uppercase;
+		text-transform: lowercase;
 	}
 
 	> .first > a {
@@ -111,7 +132,7 @@
 		@include span-columns(12);
 		float: left;
 		text-align: center;
-		margin-top: 20px;
+		margin-top: 0px;
 	}
 
 	li > a {

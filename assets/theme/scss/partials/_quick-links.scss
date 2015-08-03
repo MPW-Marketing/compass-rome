@@ -1,9 +1,9 @@
 $border-color: 				#00aeef;
-$box-background-top-color: 	$rome-blue;
-$box-background-bottom-color: 	#011022;
+$box-background-top-color: 	#002d62;
+$box-background-bottom-color: 	$rome-blue;
 $stripe-color:				#fff;
-$box-hover-top-color:		lighten($box-background-top-color, 20);
-$box-hover-bottom-color: 	lighten($box-background-bottom-color, 20);
+$box-hover-top-color:		lighten($box-background-top-color, 15);
+$box-hover-bottom-color: 	lighten($box-background-bottom-color, 15);
 $box-bg-top-actual:			#094C80;
 
 .quick-links-outer {

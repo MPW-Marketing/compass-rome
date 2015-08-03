@@ -9,8 +9,8 @@
   $medium-screen: em(640) !default;
   $tab-border: 1px solid $base-border-color;
   $tab-content-background: $base-background-color;
-  $tab-active-background-top: $rome-blue;
-  $tab-active-background-bottom: #002d62;
+  $tab-active-background-top: #002d62;
+  $tab-active-background-bottom: $rome-blue;
   $tab-active-background: $tab-active-background-top;
   $tab-inactive-color: $white;
   $tab-inactive-background-top:  $light-gray-top;

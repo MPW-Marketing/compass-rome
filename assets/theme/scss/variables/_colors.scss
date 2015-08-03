@@ -26,10 +26,10 @@ $rome-dark-gray: #303030;
 //------------------------------------------------------------------------------
 $site-main-color:				  $rome-red;
 $site-secondary-color:			  $rome-blue;
-$base-background-color:           $rome-fog;
+$base-background-color:           $white;
 $base-font-color:                 $off-black;
 $base-light-font-color:           $white;
-$base-border-color:               $rome-fog;
+$base-border-color:               $white;
 $base-accent-color:               $site-main-color;
 $base-heading-color:              $site-main-color;
 $base-heading-color-hover:        $site-main-color;
@@ -103,7 +103,7 @@ $menu-mobile-subnav-color:           lighten($nav-link-color, 15);
 
 // Entry Colors
 //------------------------------------------------------------------------------
-$entry-background-color:           $rome-fog;;
+$entry-background-color:           $white;
 $entry-border-color:               $base-border-color;
 $entry-sticky-border-color:        $dark-gray;
 $blockquote-border-color:          $light-fog;
@@ -158,7 +158,7 @@ $allowed-tags-background-color:             $light-fog;
 
 // Pagination Colors
 //------------------------------------------------------------------------------
-$pagination-background-color:         $rome-fog;
+$pagination-background-color:         $white;
 $pagination-background-color-hover:   $light-fog;
 $pagination-current-background-color: darken($light-fog, 4);
 $pagination-link-color:               $base-font-color;
@@ -180,7 +180,7 @@ $page-links-border-color-hover:       $pagination-border-color-hover;
 
 // Base Widget Colors
 //------------------------------------------------------------------------------
-$widget-background-color: $rome-fog;
+$widget-background-color: $white;
 $widget-link-color:       $medium-gray;
 $widget-link-color-hover: $base-link-color;
 
