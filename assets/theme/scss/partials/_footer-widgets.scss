@@ -38,6 +38,9 @@
 				padding: initial;
 			}
 	}
+	.footer-widgets-1, .footer-widgets-2, .footer-widgets-3, .footer-widgets-4 {
+
+	}
 
 	a {
 		color: $footer-widgets-link-color;
@@ -99,7 +102,7 @@
 	}
 }
 
-@include media($medium-screen-up) {
+@include media($small-screen-up) {
 	.footer-widgets-4 {
 		@include omega();
 	}

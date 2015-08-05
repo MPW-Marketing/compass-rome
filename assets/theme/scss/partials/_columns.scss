@@ -1,4 +1,5 @@
-.col-row {
+@include media($small-screen-up) {
+	.col-row {
 
 	@include outer-container;
 	.col {
@@ -13,6 +14,7 @@
 	.last {
 		@include omega();
 	}
+}
 }
 
 

@@ -9,10 +9,11 @@ $fullbg-offset: 20px;
 $fullbg-section-width: 120px;
 $fullbg-width-offest: $fullbg-offset + $fullbg-section-width;
 .full-width-section.nav-outer-wrap {
-    /*background: repeating-linear-gradient(to right, #000, #000 120px, transparent 120px, transparent 140px);*/
+    @include media($medium-screen-up) { /*background: repeating-linear-gradient(to right, #000, #000 120px, transparent 120px, transparent 140px);*/
     background: url(#{$image-path}#{$nav-button-background});
     margin-top: 20px;
     }
+}
 .nav-menu {
 	clear: both;
 	font-size: 0.001px;
@@ -23,7 +24,9 @@ $fullbg-width-offest: $fullbg-offset + $fullbg-section-width;
 		display: inline-block;
 		font-size: $nav-font-size;
 		text-align: center;
-		background-image: url(#{$image-path}#{$nav-button-background});
+		@include media($small-screen-up) {
+			background-image: url(#{$image-path}#{$nav-button-background});
+		}
 		margin: 0 5px;
 		min-width: 120px;
 	}
