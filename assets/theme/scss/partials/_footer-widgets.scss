@@ -1,15 +1,27 @@
 .footer-widgets {
-	/*background-color: $footer-widgets-background-color;
-	background-image: url(#{$image-path}#{$footer-background});*/
-	background: linear-gradient( to bottom, #{$site-main-color}, #{$site-main-color} 60px, #{$footer-widgets-background-color} 60px, #{$footer-widgets-background-color});
-	background-repeat: repeat-x;
+	background: #{$footer-widgets-background-color};
+	@include media($small-screen-up) {
+		background: linear-gradient( to bottom, #{$site-main-color}, #{$site-main-color} 60px, #{$footer-widgets-background-color} 60px, #{$footer-widgets-background-color});
+		background-repeat: repeat-x;
+	}
 	color: $footer-widgets-font-color;
 	font-size: $footer-widgets-font-size;
 	padding: $base-padding-small 0 10px;
-
+	.footer-widgets-wrap {
+		margin-left: 0;
+		margin-right: 0;
+			@include media($small-screen-up) {
+						margin-left: auto;
+						margin-right: auto;
+			}
+	}
 	.widget-title {
 		color: $footer-widgets-heading-color;
 		margin-bottom: 30px;
+		background: #{$site-main-color};
+			@include media($small-screen-up) {
+				background: transparent;
+	}
 	}
 
 	a {
