@@ -10,18 +10,33 @@
 	.footer-widgets-wrap {
 		margin-left: 0;
 		margin-right: 0;
+		padding-left: 0;
+    	padding-right: 0;
 			@include media($small-screen-up) {
 						margin-left: auto;
 						margin-right: auto;
+						padding-left: 5%;
+    					padding-right: 5%;
 			}
 	}
 	.widget-title {
 		color: $footer-widgets-heading-color;
 		margin-bottom: 30px;
 		background: #{$site-main-color};
+		text-align: center;
+    	padding: 10px;
 			@include media($small-screen-up) {
 				background: transparent;
+				text-align: left;
+				padding: initial;
+			}
 	}
+	.text-widget {
+    	margin: 0 auto;
+    	padding: 0 5%;
+			@include media($small-screen-up) {
+				padding: initial;
+			}
 	}
 
 	a {
