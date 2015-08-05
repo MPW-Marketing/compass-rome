@@ -106,6 +106,13 @@
       float: left;
     }
   }
+  &.home-events {
+    margin-top: 20px;
+    @include media($small-screen-up) {
+      margin-top: 0;
+    }
+  }
+
   &.home-events .tab-content {
     height: 217px;
     overflow-y: auto;
@@ -117,6 +124,6 @@
   @include media($tab-mode) {
     width: 49%;
 
-}
-}
+  }
+  }
 }
