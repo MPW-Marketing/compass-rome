@@ -24,7 +24,7 @@ $fullbg-width-offest: $fullbg-offset + $fullbg-section-width;
 		display: inline-block;
 		font-size: $nav-font-size;
 		text-align: center;
-		@include media($small-screen-up) {
+		@include media($medium-screen-up) {
 			background-image: url(#{$image-path}#{$nav-button-background});
 		}
 		margin: 0 5px;
@@ -80,7 +80,9 @@ $fullbg-width-offest: $fullbg-offset + $fullbg-section-width;
 	.menu-item-hover,
 	.menu-item:focus {
 		position: static;
-		background-image: url(#{$image-path}#{$nav-button-background-hover});
+		@include media($medium-screen-up) {
+			background-image: url(#{$image-path}#{$nav-button-background-hover});
+		}
 		background-color: $nav-background-color;
 	}
 
@@ -271,6 +273,7 @@ body {
 	.nav-menu {
 		.menu-item {
 			display: block;
+			background: $menu-mobile-background-color;
 		}
 
 		li a {

@@ -12,11 +12,13 @@
 		margin-right: 0;
 		padding-left: 0;
     	padding-right: 0;
+    	max-width: $small-screen;
 			@include media($small-screen-up) {
 						margin-left: auto;
 						margin-right: auto;
 						padding-left: 5%;
     					padding-right: 5%;
+    					max-width: inherit;
 			}
 	}
 	.widget-title {
@@ -31,7 +33,7 @@
 				padding: initial;
 			}
 	}
-	.text-widget {
+	.textwidget {
     	margin: 0 auto;
     	padding: 0 5%;
 			@include media($small-screen-up) {

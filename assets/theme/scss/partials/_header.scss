@@ -1,10 +1,8 @@
 .site-header {
 	/*background-color: $header-background-color;
 	background-image: url(#{$image-path}#{$header-background});*/
-	background: url(#{$header-background}), linear-gradient(to bottom right, #fff, #fff); 
-	background-position: top center;
-  	background-repeat: no-repeat;
-  	background-size: 1910px 175px;
+	background: url(#{$header-background}) top center no-repeat, linear-gradient(to bottom right, #fff, #fff); 
+  	background-size: 1910px 175px, cover;
 	color: $header-font-color;
 	padding: 10px 0;
 
