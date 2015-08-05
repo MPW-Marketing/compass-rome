@@ -29,7 +29,19 @@ $box-bg-top-actual:			#094C80;
     	a {
     		color: $base-light-font-color;
     		font-size: $medium-font-size;
-    	}	
+    	       .img-icon {
+                max-width: 100px;
+                max-height: 100px;
+                margin-top: 10px;
+              }
+        &:hover {
+              .img-icon {
+                  max-width: 100px;
+                  max-height: 100px;
+                  @include transition(opacity, 0s, ease-in-out);
+                }
+        }
+      }	
     	.link-info {
     		font-size: $small-font-size;
     	}
@@ -41,11 +53,6 @@ $box-bg-top-actual:			#094C80;
     		font-weight: bold;
     		}
     	}
-    .img-icon {
-      max-width: 100px;
-      max-height: 100px;
-      margin-top: 10px;
-    }
   	}
   	.quick-link.last {
   		@include omega();
