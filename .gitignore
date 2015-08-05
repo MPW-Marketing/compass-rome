@@ -17,3 +17,6 @@
 # Third-party dependencies
 assets/bower/
 assets/composer/
+# additions
+additions/
+additions/css/additionalstyle.scss
