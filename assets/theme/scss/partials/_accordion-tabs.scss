@@ -55,7 +55,7 @@
 
   .tab-link {
     background-color: $tab-inactive-color;
-    background: repeating-linear-gradient( -45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0.1) 1px, rgba(0, 0, 0, 0.1) 5px), linear-gradient(0deg, $tab-inactive-background-top 0%, $tab-inactive-background-bottom 100%);
+    background: url(#{$image-path}#{$nav-button-background-hover});
     border-top: $tab-border;
     color: $white;
     display: block;
@@ -81,7 +81,7 @@
 
     &.is-active {
       background-color: $tab-active-background-top;
-      background: repeating-linear-gradient( -45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0.1) 1px, rgba(0, 0, 0, 0.1) 5px), linear-gradient( to bottom, $tab-active-background-top, $tab-active-background-bottom);
+      background: url(#{$image-path}#{$quicklinks-hover-background});
 
       @include media($tab-mode) {
         background-color: $tab-active-background;
