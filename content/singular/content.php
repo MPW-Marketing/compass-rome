@@ -8,7 +8,12 @@
  * @license     GPL-2.0+
  * @since       1.0.0
  */
+$show_title = true;
+$should_hide = get_post_meta( get_the_id() , 'rw_hide_title', true );
+echo 'hide title ' .$should_hide;
+//if ( get_post_meta( get_the_id() , 'rw_hide_title', true ) == true )
 ?>
+
 <article <?php hybrid_attr( 'post' ); ?>>
 
 	<?php tha_entry_top(); ?>

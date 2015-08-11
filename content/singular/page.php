@@ -8,13 +8,18 @@
  * @license     GPL-2.0+
  * @since       1.0.0
  */
+
+$hide_title = get_post_meta( get_the_id() , 'rw_hide_title', true );
+
 ?>
 <article <?php hybrid_attr( 'post' ); ?>>
 
 	<?php tha_entry_top(); ?>
 
 	<header class="entry-header">
+	<?php if (!$hide_title) { ?>
 		<h1 <?php hybrid_attr( 'entry-title' ); ?>><?php single_post_title(); ?></h1>
+<?php	} ?>
 	</header><!-- .entry-header -->
 
 	<div <?php hybrid_attr( 'entry-content' ); ?>>

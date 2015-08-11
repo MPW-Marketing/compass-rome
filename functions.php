@@ -108,10 +108,13 @@ function compassrome_includes() {
 	require_once $includes_dir . 'widgetize.php';
 }
 
+// define the tha_entry_top callback
 
 function insert_layer_slider () {
-	if (is_front_page()){
-		return layerslider(1);
+	$post_id = get_the_id();
+	$insert_slider = get_post_meta( $post_id, 'rw_layer_slide_show', true );
+	if ($insert_slider){
+		return layerslider($insert_slider);
 	}
 }
 
@@ -199,3 +202,42 @@ do_action( 'flagship_after_setup_parent' );
     return "<div class='" . $divclass . "'>" . $content . "</div>";
   }
   add_shortcode( 'column', 'column_func' );
+
+
+  //add metabox to hide title
+
+  add_filter( 'rwmb_meta_boxes', 'mpwrome_register_meta_boxes' );
+function mpwrome_register_meta_boxes( $meta_boxes )
+{
+    $prefix = 'rw_';
+    // 1st meta box
+    $meta_boxes[] = array(
+        'id'       => 'hide_title',
+        'title'    => 'Hide Page Title',
+        'pages'    => array( 'post', 'page' ),
+        'context'  => 'normal',
+        'priority' => 'high',
+        'fields' => array(
+            array(
+                'name'  => 'Check to hide the title on this page',
+                'id'    => $prefix . 'hide_title',
+                'type'  => 'checkbox',
+            )
+        )
+    );
+     $meta_boxes[] = array(
+        'id'       => 'layer_slider_show',
+        'title'    => 'Insert Layer Slider On Page',
+        'pages'    => array( 'post', 'page' ),
+        'context'  => 'normal',
+        'priority' => 'high',
+        'fields' => array(
+            array(
+                'name'  => 'Enter Layer Slider Number to insert Slider on this page',
+                'id'    => $prefix . 'layer_slide_show',
+                'type'  => 'text',
+            )
+        )
+    );
+    return $meta_boxes;
+}
