@@ -226,6 +226,9 @@ body {
 	float: right;
 	margin: 7px 0;
 	padding: 0;
+	position: absolute;
+	top:	0;
+	right: 0;
 
 	@include media($medium-screen-up) {
 		display: none;

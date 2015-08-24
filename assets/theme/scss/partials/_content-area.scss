@@ -4,6 +4,7 @@
 .entry {
 	margin-bottom: $base-margin;
 	padding: 0;
+	padding-top: 15px;
 	position: relative;
 
 	@include media($small-screen-up) {

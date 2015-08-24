@@ -9,21 +9,42 @@ $box-bg-img:  #{$image-path}#{$quicklinks-background};
 $box-bg-img-hover: #{$image-path}#{$quicklinks-hover-background};
 
 .quick-links-outer {
-	background: linear-gradient( to bottom,  $border-color, $border-color 8px, transparent 8px, transparent 202px,  $border-color 202px,  $border-color), url(#{$box-bg-img}), linear-gradient(to bottom, #00aeef, #00aeef);
+    background: url(#{$box-bg-img});
+  @include media($smaller-screen-up){
+      background: linear-gradient( to bottom,  $border-color, $border-color 8px, transparent 8px, transparent 202px,  $border-color 202px,  $border-color), url(#{$box-bg-img}), linear-gradient(to bottom, #00aeef, #00aeef);
+    }
   	margin: 0 -600px;
   	padding: 0 600px;
 }
 .quick-links-container {
-  @include outer-container;
-  height: 208px;
-  border-top: 8px solid transparent;
-   border-bottom: 8px solid transparent;
+  @include media($smaller-screen-up){
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    height: 208px;
+  }
+
   color: $base-light-font-color;
   	.quick-link { 
-  		@include span-columns(4); 
+    margin-left: -600px;
+    margin-right: -600px;
+    padding-left: 600px;
+    padding-right: 600px;
+    background: url(#{$box-bg-img});
+      @include media($smaller-screen-up){
+        background: transparent;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+          @include span-columns(4 of 12);
+          border-top: 0px solid transparent;
+          padding: 10px;
+      }
+      border-top: 8px solid $border-color; 
   		text-align: center;
-  		height: 100%;
-  		padding: 10px;
+  		height: 192px;
+  		
+
   		cursor: pointer;
   		    &:hover {
      			 background: url(#{$box-bg-img-hover});
@@ -57,6 +78,10 @@ $box-bg-img-hover: #{$image-path}#{$quicklinks-hover-background};
     	}
   	}
   	.quick-link.last {
-  		@include omega();
+      @include media($smaller-screen-up){
+        border-bottom: 0px;
+        @include omega();
+      }
+      border-bottom: 8px solid $border-color;
   	}
 }

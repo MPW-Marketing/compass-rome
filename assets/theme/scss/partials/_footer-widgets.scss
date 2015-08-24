@@ -3,6 +3,9 @@
 	@include media($small-screen-up) {
 		background: linear-gradient( to bottom, #{$site-main-color}, #{$site-main-color} 60px, #{$footer-widgets-background-color} 60px, #{$footer-widgets-background-color});
 		background-repeat: repeat-x;
+		.widget {
+			margin-left: 15px;
+		}
 	}
 	color: $footer-widgets-font-color;
 	font-size: $footer-widgets-font-size;
@@ -40,8 +43,8 @@
 				padding: initial;
 			}
 	}
-	.footer-widgets-1, .footer-widgets-2, .footer-widgets-3, .footer-widgets-4 {
-
+	.widget {
+		margin-left: 0;
 	}
 
 	a {

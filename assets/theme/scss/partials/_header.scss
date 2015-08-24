@@ -1,11 +1,14 @@
 .site-header {
+	text-align: center;
 	background-color: #fff;;
 	/*background-image: url(#{$image-path}#{$header-background});*/
 	background: url(#{$image-path}#{$header-background-small}) center -40px no-repeat;
-		background-size: 810px 330px, cover;	
+	background-size: 810px 330px, cover;
+
 	@include media($small-screen-up) {
 	background: url(#{$header-background}) center top no-repeat, linear-gradient(to bottom right, #fff, #fff); 
 	background-size: 1910px 175px, cover;
+	text-align: left;
 	}
 
 	color: $header-font-color;
