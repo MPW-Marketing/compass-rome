@@ -2,7 +2,7 @@
 	text-align: center;
 	background-color: #fff;;
 	/*background-image: url(#{$image-path}#{$header-background});*/
-	background: url(#{$image-path}#{$header-background-small}) center -50px no-repeat;
+	background: url(#{$image-path}#{$header-background-small}) center -55px no-repeat;
 	background-size: 810px 330px, cover;
 
 	@include media($small-screen-up) {
