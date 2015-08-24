@@ -2,13 +2,14 @@
 	text-align: center;
 	background-color: #fff;;
 	/*background-image: url(#{$image-path}#{$header-background});*/
-	background: url(#{$image-path}#{$header-background-small}) center -40px no-repeat;
+	background: url(#{$image-path}#{$header-background-small}) center -50px no-repeat;
 	background-size: 810px 330px, cover;
 
 	@include media($small-screen-up) {
 	background: url(#{$header-background}) center top no-repeat, linear-gradient(to bottom right, #fff, #fff); 
 	background-size: 1910px 175px, cover;
 	text-align: left;
+	background-position: center -10px;
 	}
 
 	color: $header-font-color;
@@ -20,6 +21,7 @@
 
 	@include media($medium-screen-up) {
 		padding: 25px 0 0;
+		background-position: center top;
 	}
 }
 
@@ -73,14 +75,14 @@
     float: none;
     text-align: center;
     margin-top: 10px;
-    margin-bottom:10px;
+    margin-bottom:17px;
   	@include media($small-screen-up) {
   		@include span-columns(4);
   		margin-left: auto;
     	margin-right: auto;
     	float: none;
   		margin-top: -120px;
-  		margin-bottom: 19px;
+  		margin-bottom: 22px;
   	}  
 	@include media($medium-screen-up) {
 		@include span-columns(3);
