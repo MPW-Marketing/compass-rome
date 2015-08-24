@@ -89,6 +89,8 @@ $menu-secondary-border-color:     $base-border-color;
 $menu-secondary-link-color:       lighten($nav-link-color, 10);
 $menu-secondary-link-color-hover: $base-link-color;
 
+
+
 // Mobile Menu Colors
 //------------------------------------------------------------------------------
 $menu-button-background-color:       transparent;
@@ -100,6 +102,8 @@ $menu-mobile-border-color:           rgba(255, 255, 255, 0.1);
 $menu-mobile-color:                  lighten($nav-link-color, 30);
 $menu-mobile-color-hover:            $base-link-color;
 $menu-mobile-subnav-color:           lighten($nav-link-color, 15);
+$menu-button-alternate-background-color:       $rome-blue;
+$menu-button--alternate-background-color-hover: transparent;
 
 // Entry Colors
 //------------------------------------------------------------------------------

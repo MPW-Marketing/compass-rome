@@ -26,9 +26,13 @@ $fullbg-width-offest: $fullbg-offset + $fullbg-section-width;
 		text-align: center;
 		@include media($medium-screen-up) {
 			background-image: url(#{$image-path}#{$nav-button-background});
+					&.alternate-style {
+			background-image: url(#{$image-path}#{$alternate-nav-button-background});
+		}
 		}
 		margin: 0 5px;
 		min-width: 120px;
+
 	}
 
 	li > a {
@@ -242,6 +246,7 @@ body {
 	&::before {
 		font-size: $menu-button-font-size;
 	}
+
 }
 
 .menu-mobile {
@@ -274,6 +279,9 @@ body {
 		.menu-item {
 			display: block;
 			background: $menu-mobile-background-color;
+			&.alternate-style {
+			background: $menu-button-alternate-background-color
+			}
 		}
 
 		li a {
@@ -287,6 +295,7 @@ body {
 			background: lighten($menu-mobile-background-color, 3);
 			color: $menu-mobile-color-hover;
 		}
+
 	}
 
 	.sub-menu,

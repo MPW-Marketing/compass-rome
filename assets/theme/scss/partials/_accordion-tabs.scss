@@ -55,7 +55,7 @@
 
   .tab-link {
     background-color: $tab-inactive-color;
-    background: url(#{$image-path}#{$nav-button-background-hover});
+    background: url(#{$image-path}#{$events-tab-inactive-bg});
     border-top: $tab-border;
     color: $white;
     display: block;
@@ -81,7 +81,7 @@
 
     &.is-active {
       background-color: $tab-active-background-top;
-      background: url(#{$image-path}#{$quicklinks-hover-background});
+      background: url(#{$image-path}#{$events-tab-active-bg});
 
       @include media($tab-mode) {
         background-color: $tab-active-background;
