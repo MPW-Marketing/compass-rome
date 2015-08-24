@@ -1,8 +1,13 @@
 .site-header {
-	/*background-color: $header-background-color;
-	background-image: url(#{$image-path}#{$header-background});*/
-	background: url(#{$header-background}) top center no-repeat, linear-gradient(to bottom right, #fff, #fff); 
-  	background-size: 1910px 175px, cover;
+	background-color: #fff;;
+	/*background-image: url(#{$image-path}#{$header-background});*/
+	background: url(#{$image-path}#{$header-background-small}) center -40px no-repeat;
+		background-size: 810px 330px, cover;	
+	@include media($small-screen-up) {
+	background: url(#{$header-background}) center top no-repeat, linear-gradient(to bottom right, #fff, #fff); 
+	background-size: 1910px 175px, cover;
+	}
+
 	color: $header-font-color;
 	padding: 10px 0;
 
@@ -58,17 +63,35 @@
 
 /* Header Right
 --------------------------------------------- */
-
 .header-right {
-	@include span-columns(3);
-	float: right;
-	text-align: right;
-
-	.widget {
-		margin: 0;
-		color: $header-font-color;
-		.widget-title {
-			color: $header-font-color;
+	@include span-columns(12);
+	margin-left: auto;
+    margin-right: auto;
+    float: none;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom:10px;
+  	@include media($small-screen-up) {
+  		@include span-columns(4);
+  		margin-left: auto;
+    	margin-right: auto;
+    	float: none;
+  		margin-top: -120px;
+  		margin-bottom: 19px;
+  	}  
+	@include media($medium-screen-up) {
+		@include span-columns(3);
+		float: right;
+		text-align: right;
+		margin-top: 0;
+		margin-bottom: 0;
 		}
+	.widget {
+	margin: 0;
+	color: $header-font-color;
+	.widget-title {
+		color: $header-font-color;
+	}
+
 	}
 }
