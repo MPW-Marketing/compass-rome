@@ -91,9 +91,9 @@ $fullbg-width-offest: $fullbg-offset + $fullbg-section-width;
 	}
 	.left-sub .sub-menu {
 		.sub-menu {
-			margin: -53px 0 0 -229px;
+			margin-left: -229px;
 			.sub-menu {
-				margin: -53px 0 0 -229px
+				margin-left: -229px
 			}
 		}
 	}
