@@ -26,6 +26,8 @@ $fullbg-width-offest: $fullbg-offset + $fullbg-section-width;
 		text-align: center;
 		@include media($medium-screen-up) {
 			background-image: url(#{$image-path}#{$nav-button-background});
+			background-repeat: repeat-x;
+    		background-size: 12px 100%;
 					&.alternate-style {
 			background-image: url(#{$image-path}#{$alternate-nav-button-background});
 		}
