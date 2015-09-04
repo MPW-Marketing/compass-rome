@@ -1,9 +1,9 @@
 .site-header {
 	text-align: center;
 	background-color: #fff;;
-	/*background: url(#{$image-path}#{$header-background-new}) center 0 no-repeat;*/
-	background: url(#{$header-background}) center 0 no-repeat;
-	background-size: 3012px 287px, cover;
+	background: url(#{$image-path}#{$header-background-small}) center 0 no-repeat;
+	/*background: url(#{$header-background}) center 0 no-repeat;*/
+	background-size: 810px 330px, cover;
 
 	@include media($small-screen-up) {
 	/*background: url(#{$image-path}#{$header-background-new}) center top no-repeat, linear-gradient(to bottom right, #fff, #fff); */
@@ -76,7 +76,7 @@
     margin-right: auto;
     float: none;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 0px;
     margin-bottom:17px;
   	@include media($small-screen-up) {
   		@include span-columns(4);

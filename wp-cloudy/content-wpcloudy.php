@@ -4,9 +4,6 @@
  *
  */
 ?>
-<div class="wpc-loading-spinner" style="display:none">
-	<img src="<?php echo plugins_url( 'img/ajax-loader.gif', dirname(__FILE__)); ?>" alt="loader"/>
-</div>
 
 <!-- Start #wpc-weather -->
 <?php echo $wpc_html_container_start; ?>
@@ -15,7 +12,6 @@
 	
 	<!-- Current weather -->
 	<?php echo $wpc_html_now_start; ?>
-		<?php // echo $wpc_html_now_location_name; ?>
 		<?php echo $wpc_html_display_now_time_symbol; ?>
 		<?php echo $wpc_html_display_now_time_temperature; ?>
 	<?php echo $wpc_html_now_end; ?>
@@ -81,8 +77,6 @@
 	<!-- CSS -->
 	<?php echo $wpc_html_custom_css; ?>
 	<?php echo $wpc_html_css3_anims; ?>
-	<?php echo $wpc_html_temp_unit_metric; ?>
-	<?php echo //$wpc_html_temp_unit_imperial; ?>
 
 <!-- End #wpc-weather -->
 <?php echo $wpc_html_container_end; ?>
