@@ -10,7 +10,6 @@
  */
 $show_title = true;
 $should_hide = get_post_meta( get_the_id() , 'rw_hide_title', true );
-echo 'hide title ' .$should_hide;
 //if ( get_post_meta( get_the_id() , 'rw_hide_title', true ) == true )
 ?>
 

@@ -1,9 +1,9 @@
 .site-header {
 	text-align: center;
 	background-color: #fff;;
-	background: url(#{$image-path}#{$header-background-small}) center 0 no-repeat;
+	background: url(#{$image-path}#{$header-background-small}) center -30px no-repeat;
 	/*background: url(#{$header-background}) center 0 no-repeat;*/
-	background-size: 810px 330px, cover;
+	background-size: 700px 285px, cover;
 
 	@include media($small-screen-up) {
 	/*background: url(#{$image-path}#{$header-background-new}) center top no-repeat, linear-gradient(to bottom right, #fff, #fff); */
