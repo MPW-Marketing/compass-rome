@@ -238,7 +238,7 @@ body {
 .menu-button {
 	background: $menu-button-background-color;
 	border-radius: $base-border-radius;
-	color: $menu-button-link-color;
+	color: $white;
 	cursor: pointer;
 	display: block;
 	float: right;
@@ -246,7 +246,7 @@ body {
 	padding: 0;
 	position: absolute;
 	top:	0;
-	right: 0;
+	right: 10px;
 
 	@include media($medium-screen-up) {
 		display: none;

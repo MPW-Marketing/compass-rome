@@ -1,19 +1,21 @@
 .site-header {
 	text-align: center;
 	background-color: #fff;;
-	/*background-image: url(#{$image-path}#{$header-background});*/
-	background: url(#{$image-path}#{$header-background-small}) center -48px no-repeat;
-	background-size: 810px 330px, cover;
+	/*background: url(#{$image-path}#{$header-background-new}) center 0 no-repeat;*/
+	background: url(#{$header-background}) center 0 no-repeat;
+	background-size: 3012px 287px, cover;
 
 	@include media($small-screen-up) {
-	background: url(#{$header-background}) center top no-repeat, linear-gradient(to bottom right, #fff, #fff); 
-	background-size: 1910px 175px, cover;
+	/*background: url(#{$image-path}#{$header-background-new}) center top no-repeat, linear-gradient(to bottom right, #fff, #fff); */
+	background: url(#{$header-background}) center top no-repeat, linear-gradient(to bottom right, #fff, #fff);
+	background-size: 1857px 177px, cover;
 	text-align: left;
-	background-position: center -15px;
+	background-position: center 0;
 	}
 
 	color: $header-font-color;
-	padding: 10px 0;
+	padding: 5px 0;
+
 
 	@include media($small-screen-up) {
 		padding: 15px 0;
@@ -74,10 +76,11 @@
     margin-right: auto;
     float: none;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom:17px;
   	@include media($small-screen-up) {
   		@include span-columns(4);
+  		margin-top: 10px;
   		margin-left: auto;
     	margin-right: auto;
     	float: none;

@@ -12,6 +12,9 @@
 	word-break: normal;
 
 	@include media($smaller-screen-up) {
+		padding-top: 10px;
+	}
+	@include media($medium-screen-up) {
 		padding-top: $site-inner-padding;
 	}
 }
