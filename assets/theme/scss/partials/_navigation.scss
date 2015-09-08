@@ -248,9 +248,11 @@ body {
 	margin: 7px 0;
 	padding: 0;
 	position: absolute;
-	top:	15px;
+	top:	20px;
 	right: 30px;
-
+	@include media($small-screen-up) {
+		top: 55px;
+	}
 	@include media($medium-screen-up) {
 		display: none;
 	}
