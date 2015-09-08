@@ -77,23 +77,26 @@ $fullbg-width-offest: $fullbg-offset + $fullbg-section-width;
 			position: relative;
 			width: 210px;
 		}
-
-		.sub-menu {
-			margin: -53px 0 0 209px;
-			a {
-				width: 230px;
-			}
+		@include media($medium-screen-up) {
 			.sub-menu {
-				margin: -53px 0 0 229px;
+				margin: -53px 0 0 209px;
+				a {
+					width: 230px;
+				}
+				.sub-menu {
+					margin: -53px 0 0 229px;
+				}
 			}
 		}
-
 	}
-	.left-sub .sub-menu {
-		.sub-menu {
-			margin-left: -229px;
+	@include media($medium-screen-up) {
+	
+		.left-sub .sub-menu {
 			.sub-menu {
-				margin-left: -229px
+				margin-left: -229px;
+				.sub-menu {
+					margin-left: -229px
+				}
 			}
 		}
 	}
@@ -245,8 +248,8 @@ body {
 	margin: 7px 0;
 	padding: 0;
 	position: absolute;
-	top:	0;
-	right: 10px;
+	top:	10px;
+	right: 25px;
 
 	@include media($medium-screen-up) {
 		display: none;
@@ -265,7 +268,7 @@ body {
 	}
 
 	&::before {
-		font-size: $menu-button-font-size;
+		font-size: 50px;
 	}
 
 }
