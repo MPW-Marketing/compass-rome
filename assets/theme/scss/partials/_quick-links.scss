@@ -25,10 +25,10 @@ $box-bg-img-hover: #{$image-path}#{$quicklinks-hover-background};
 
   color: $base-light-font-color;
   	.quick-link { 
-    margin-left: -600px;
-    margin-right: -600px;
-    padding-left: 600px;
-    padding-right: 600px;
+    margin-left: -5vw;
+    margin-right: -5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
     background: url(#{$box-bg-img});
       @include media($smaller-screen-up){
         background: transparent;
