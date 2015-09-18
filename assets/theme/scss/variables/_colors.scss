@@ -94,8 +94,8 @@ $menu-secondary-link-color-hover: $base-link-color;
 
 // Mobile Menu Colors
 //------------------------------------------------------------------------------
-$menu-button-background-color:       transparent;
-$menu-button-background-color-hover: transparent;
+$menu-button-background-color:       $rome-red;
+$menu-button-background-color-hover: transparentize($rome-red, 0.5);
 $menu-button-link-color:             $off-black;
 $menu-button-color-hover:            #000;
 $menu-mobile-background-color:       lighten($off-black, 3);

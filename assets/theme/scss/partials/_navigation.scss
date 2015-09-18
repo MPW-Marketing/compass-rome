@@ -242,7 +242,7 @@ body {
 .menu-button {
 	background: $menu-button-background-color;
 	border-radius: $base-border-radius;
-	color: #000;
+	color: #fff;
 	cursor: pointer;
 	display: block;
 	float: right;
@@ -262,7 +262,7 @@ body {
 	&:focus,
 	&:active {
 		background: $menu-button-background-color-hover;
-		color: $menu-button-color-hover;
+		color: #fff;
 		outline: none;
 
 		@include media($medium-screen-up) {
